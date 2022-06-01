@@ -29,7 +29,7 @@ body {
   transform: translate(-50%, -50%);
   letter-spacing: 2;
   left: 50%;
-  top: 15%;
+  top: 10%;
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 1.2em;
@@ -225,7 +225,7 @@ main {
 .scene {
   position: absolute;
   transform-style: preserve-3d;
-  top: 58%;
+  top: 62%;
   animation: sceneRotate var(--rotateSpeed) infinite linear;
   @keyframes sceneRotate {
     to {
