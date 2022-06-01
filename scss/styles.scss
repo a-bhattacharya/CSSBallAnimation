@@ -1,5 +1,5 @@
 :root {
-  --boxColor: rgba(0, 123, 255, 0.467);
+  --boxColor: rgba(55, 52, 250, 0.467);
   --rotateSpeed: 30s;
   --bounceSpeed: 1.5s;
 }
@@ -225,6 +225,7 @@ main {
 .scene {
   position: absolute;
   transform-style: preserve-3d;
+  top: 58%;
   animation: sceneRotate var(--rotateSpeed) infinite linear;
   @keyframes sceneRotate {
     to {
@@ -241,7 +242,12 @@ main {
   position: absolute;
   left: -0.5em;
   bottom: 1em;
-  background-image: radial-gradient(circle at top, rgb(85, 106, 197), #000);
+  background-image: radial-gradient(
+    circle at top,
+    rgb(85, 106, 197),
+    45%,
+    rgb(6, 5, 19)
+  );
   animation: ballBounce var(--bounceSpeed) infinite ease-out,
     sceneRotate var(--rotateSpeed) infinite linear reverse;
 
